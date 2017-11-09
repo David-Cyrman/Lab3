@@ -64,13 +64,6 @@ body{
 	
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
-}
-
 #container{
 	width: 85%;
 	background: #fff;
@@ -84,45 +77,15 @@ header#main{
 	background: #f4f4f4;
 }
 
-nav{
-	padding:10px;
-	background: #aaa;
-	overflow: hidden;
-}
 
-nav li{
-	float: left;
-	padding: 10px 10px 0 10px;
-	
-}
 
-nav a{
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	
-}
+
+
 
 nav a:hover{
 	color:#000;
 	
 }
-
-section#main{
-	width:70%;
-	float:left;
-}
-
-aside{
-	width:20%;
-	float: right;
-}
-
-footer{
-	padding:10px;
-	text-align:center;
-}
-
 
 
 /* ==========================================================================

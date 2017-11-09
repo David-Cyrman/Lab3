@@ -24,17 +24,30 @@
             });
         });
 
+
+        var nav = ["Playlist"];
+
         $(document).ready(function () {
             $("#navbar").ready(function () {
-                $("ul").append("<li><a href='#'>Home</a></li>"),
-                    $("ul").append("<li><a href='#'>Services</a></li>"),
-                    $("ul").append("<li><a href='#'>Contact us</a></li>")
+                $("#navbar").css({ "padding": "10px", "background-color": "#aaa", "overflow": "hidden" });
+                $("ul").ready(function () {
+                    $("ul").append("<li>").css({ "list-style-type": "none", "margin": "0", "padding": "0" });
 
+                    for (var index = 0; index < nav.length; index++) {
+                        $("li").append("<a>").css({ "float": "left", "padding": "10px 10px 0 10px" });
+                        $("a").append(nav[index]).attr("href", nav[index] + '.html').css({ "color": "#fff", "text-decoration": "none", "font-weight": "bold" });
+                    }
+                });
+                // $("ul").append("<li><a href='#'>Home</a></li>").css( {"list-style-type": "none",  "margin": "0", "padding": "0"}),
+                //  $("ul").append("<li><a href='#'>Services</a></li>").css( {"list-style-type": "none",  "margin": "0", "padding": "0"}),
+                //  $("ul").append("<li><a href='#'>Contact us</a></li>").css( {"list-style-type": "none",  "margin": "0", "padding": "0"})
             });
         });
 
+
         $(document).ready(function () {
             $("section").ready(function () {
+                $("section").css({ "width": "70%", "float": "left" });
                 $("article").ready(function () {
                     $("#primertitulo").append("Parrafo I"),
                         $("#segundotitulo").append("Parrafo II"),
@@ -46,6 +59,7 @@
 
         $(document).ready(function () {
             $("aside").ready(function () {
+                $("aside").css({ "width": "20%", "float": "right" });
                 $("#tercertitulo").append("Parafo III"),
                     $("#parrafo3").text('Sed sit amet tortor ligula. Suspendisse in mauris ornare, mollis ex quis, accumsan leo. Suspendisse potenti. In non ligula ut felis consectetur sodales. Suspendisse neque turpis, pretium ut ligula quis, ullamcorper pulvinar nulla. Vivamus nec ex ut est elementum sodales. In eu faucibus nisi. Morbi diam metus, tempus ac volutpat nec, convallis non neque. Integer malesuada, lacus pretium sollicitudin vehicula, sem justo commodo ex, ac pretium metus turpis a tellus. Donec suscipit nisi at tristique euismod. Quisque lacinia sollicitudin congue. Integer eget convallis eros, nec viverra nisi. Donec semper porta augue, vel pulvinar leo imperdiet sit amet. Nullam efficitur ligula et quam pulvinar semper.')
 
@@ -53,7 +67,7 @@
         });
 
         $(document).ready(function () {
-            $("footer").append("<p>Copyright  &copy - 2017, Laboratorio 1</p>")
+            $("footer").append("<p>Copyright  &copy - 2017, Laboratorio 1</p>").css({ "padding": "10px", "text-align": "center" })
         });
 
 
@@ -64,17 +78,10 @@
 <body>
 
     <div id="container">
-
-
         <h1></h1>
-
-
         <nav id="navbar">
-            <ul>
-
-            </ul>
+            <ul></ul>
         </nav>
-
         <section id="main">
             <article>
                 <header>
@@ -85,25 +92,13 @@
                 <p id="parrafo2"> </p>
             </article>
         </section>
-
-
         <aside>
             <h3 id="tercertitulo"></h3>
             <p id="parrafo3"></p>
         </aside>
-
         <div class="clearfix"></div>
-
         <footer></footer>
     </div>
-
-
-
-
-
-
-
-
 </body>
 
 </html>
