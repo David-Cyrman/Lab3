@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Laboratorio #1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+
+    <script>
+
+
+        $(document).ready(function () {
+
+            $("header").ready(function () {
+                $("h1").append("Laboratorio 1")
+            });
+        });
+
+        $(document).ready(function () {
+            $("#navbar").ready(function () {
+                $("ul").append("<li><a href='#'>Home</a></li>"),
+                    $("ul").append("<li><a href='#'>Services</a></li>"),
+                    $("ul").append("<li><a href='#'>Contact us</a></li>")
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("section").ready(function () {
+                $("article").ready(function () {
+                    $("#primertitulo").append("Parrafo I"),
+                        $("#segundotitulo").append("Parrafo II"),
+                        $("#parrafo1").text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada porta felis vel porta. Morbi rhoncus dui ac tempor placerat. Curabitur fringilla, ex quis volutpat imperdiet, ex est sodales orci, semper condimentum neque nisl at velit. Duis porttitor dolor lorem, vitae accumsan massa dignissim sit amet. Cras ut tortor lorem. Ut et orci at eros maximus tincidunt sed a mauris. Proin sollicitudin urna non erat tristique, in maximus nulla lobortis. Sed eu urna enim. Sed vestibulum suscipit ipsum sed elementum. Vivamus aliquet, risus non molestie ullamcorper, turpis eros posuere ante, quis laoreet ipsum neque sed felis. Integer rutrum et elit vitae fringilla. Quisque lobortis suscipit velit, vel accumsan sapien ultrices non. Aenean pellentesque tincidunt eros, posuere aliquam massa sodales quis. Vestibulum tortor orci, convallis nec pulvinar eu, lobortis quis sapien. Aenean lobortis efficitur nunc, bibendum tincidunt augue dapibus eu.'),
+                        $("#parrafo2").text('Sed sit amet tortor ligula. Suspendisse in mauris ornare, mollis ex quis, accumsan leo. Suspendisse potenti. In non ligula ut felis consectetur sodales. Suspendisse neque turpis, pretium ut ligula quis, ullamcorper pulvinar nulla. Vivamus nec ex ut est elementum sodales. In eu faucibus nisi. Morbi diam metus, tempus ac volutpat nec, convallis non neque. Integer malesuada, lacus pretium sollicitudin vehicula, sem justo commodo ex, ac pretium metus turpis a tellus. Donec suscipit nisi at tristique euismod. Quisque lacinia sollicitudin congue. Integer eget convallis eros, nec viverra nisi. Donec semper porta augue, vel pulvinar leo imperdiet sit amet. Nullam efficitur ligula et quam pulvinar semper.')
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("aside").ready(function () {
+                $("#tercertitulo").append("Parafo III"),
+                    $("#parrafo3").text('Sed sit amet tortor ligula. Suspendisse in mauris ornare, mollis ex quis, accumsan leo. Suspendisse potenti. In non ligula ut felis consectetur sodales. Suspendisse neque turpis, pretium ut ligula quis, ullamcorper pulvinar nulla. Vivamus nec ex ut est elementum sodales. In eu faucibus nisi. Morbi diam metus, tempus ac volutpat nec, convallis non neque. Integer malesuada, lacus pretium sollicitudin vehicula, sem justo commodo ex, ac pretium metus turpis a tellus. Donec suscipit nisi at tristique euismod. Quisque lacinia sollicitudin congue. Integer eget convallis eros, nec viverra nisi. Donec semper porta augue, vel pulvinar leo imperdiet sit amet. Nullam efficitur ligula et quam pulvinar semper.')
+
+            });
+        });
+
+        $(document).ready(function () {
+            $("footer").append("<p>Copyright  &copy - 2017, Laboratorio 1</p>")
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+
+        <h1></h1>
+
+
+        <nav id="navbar">
+            <ul>
+
+            </ul>
+        </nav>
+
+        <section id="main">
+            <article>
+                <header>
+                    <h2 id="primertitulo"></h2>
+                </header>
+                <p id="parrafo1"> </p>
+                <h2 id="segundotitulo"></h2>
+                <p id="parrafo2"> </p>
+            </article>
+        </section>
+
+
+        <aside>
+            <h3 id="tercertitulo"></h3>
+            <p id="parrafo3"></p>
+        </aside>
+
+        <div class="clearfix"></div>
+
+        <footer></footer>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
